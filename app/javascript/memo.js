@@ -9,7 +9,7 @@ const buildHTML = (XHR) =>{
           <div class="post-content">
             ${item.content}
           </div>
-        </div>`;
+        </div>`
   return html;
 };
 
@@ -40,7 +40,7 @@ function post() {
       };
       const list = document.getElementById("list");
       const formText = document.getElementById("content");
-      list.insertAdjacentHTML("afterend",bulidHTML(XHR))
+      list.insertAdjacentHTML("afterend",buildHTML(XHR));
       formText.value = ""; 
     };
   });
